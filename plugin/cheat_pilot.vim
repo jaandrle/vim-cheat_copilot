@@ -21,8 +21,10 @@ function! s:Topic(topic)
 endfunction
 function! s:Append(topic, question, is_quick= 0)
     let quick= a:is_quick ? 'Q' : ''
+    echo 'Cheat Pilot: answering "'.a:topic.'/'.a:question.'"…'
     let answer= <sid>CurlCheat(a:topic.'/'.a:question, quick)
-    let output= answer ? answer : 'Cheat Pilot: Nothing has been found.'
+    echo 'Cheat Pilot: done'
+    let output= answer != '' ? answer : 'Cheat Pilot: Nothing has been found.'
     call append('.', [ '', '```'.a:topic ] + split(output, "\n") + [ '```', '' ])
     silent! redraw
 endfunction

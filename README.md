@@ -17,6 +17,9 @@ suggested `command`:
     command! -nargs=? Cheat call cheat_pilot#open(<q-args>==''?&filetype:<q-args>)
 ```
 
+screenshot:
+![Usage example](./Screenshot_20220401_142008.png)
+
 ## Installation
 Install using your favorite package manager, or use Vim's built-in package support:
 
@@ -27,7 +30,3 @@ Install using your favorite package manager, or use Vim's built-in package suppo
 In `.vimrc`:
 
     set runtimepath^=~/.vim/bundle/*
-
-## TODO
-- [ ] better README
-- [ ] tbd
