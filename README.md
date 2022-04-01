@@ -9,7 +9,7 @@ The `topic` is for this purpose filetype (for now tested with: `php`, `javascrip
 You can provide proper syntax highliht via native [vim-markdown](https://github.com/tpope/vim-markdown) using:
 
 ```vim
-    let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+    let g:markdown_fenced_languages= [ 'html', 'css', 'sass', 'javascript', 'js=javascript', 'php', 'vim' ]
 ```
 
 example `command`/mapping:
